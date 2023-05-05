@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Driver's receipt</title>
+  <link rel="stylesheet" href="./style.css" />
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+  <nav class="navigation">
+    <div class="nav-items">
+      <div><p class="nav-text">Home</p></div>
+    </div>
+  </nav>
+  <main class="formContainer">
+    <div class="inputForm">
+      <p class="header">Generate driver PDF</p>
+      <form id="form" onsubmit="formSubmit(event)">
+        <div>
+          <div data-component="input" data-config-placeholder="Enter employee name" data-config-name="employee" data-config-auto-complete="off" data-config-id="name"></div>
+          <div data-component="input" data-config-placeholder="Enter driver name" data-config-name="driver" data-config-auto-complete="off" data-config-id="driver"></div>
+          <div data-component="input" data-config-type="date" data-config-name="date"></div>
+        </div>
+        <div class="submitBtnContainer">
+          <button class="primaryBtn" type="submit" onclick="tryJS(event)">Submit</button>
+        </div>
+      </form>
+    </div>
+  </main>
+</body>
+<script src="./script.js"></script>
+<script src="./utils/importer.js"></script>
+<script src="./base/index.js"></script>
+
+</html>
